@@ -8,9 +8,7 @@ struct Persona{
     string nombre;
     fecha fechaNacimiento;
     int edad;
-    
 };
-
 int main() {
     Persona personaAux;
     cout<<"Ingrese su nombre: ";
@@ -23,7 +21,6 @@ int main() {
     cin>>personaAux.fechaNacimiento.mes;
     cout<<"Ingrese el dia de tu fecha de nacimiento: ";
     cin>>personaAux.fechaNacimiento.dia;
-    
     
     cout<<"------Datos-----\n";
     cout<< personaAux.nombre<<endl;
