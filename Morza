@@ -1,2 +1,35 @@
 #include <iostream>
-using namespace;
+using namespace std;
+
+struct fecha{
+    int año, mes, dia;
+};
+struct Persona{
+    string nombre;
+    fecha fechaNacimiento;
+    int edad;
+    
+};
+
+int main() {
+    Persona personaAux;
+    cout<<"Ingrese su nombre: ";
+    cin>>personaAux.nombre;
+    cout<<"Ingrese su edad: ";
+    cin>>personaAux.edad;
+    cout<<"Ingrese el año de tu fecha de nacimiento: ";
+    cin>>personaAux.fechaNacimiento.año;
+    cout<<"Ingrese el mes de tu fecha de nacimiento: ";
+    cin>>personaAux.fechaNacimiento.mes;
+    cout<<"Ingrese el dia de tu fecha de nacimiento: ";
+    cin>>personaAux.fechaNacimiento.dia;
+    
+    
+    cout<<"------Datos-----\n";
+    cout<< personaAux.nombre<<endl;
+    cout<< "Edad: "<<personaAux.edad<<endl;
+    cout<< "Fecha de nacimiento: "<<personaAux.fechaNacimiento.dia<<endl;
+    cout<< "Fecha de nacimiento: "<<personaAux.fechaNacimiento.mes<<endl;
+    cout<< "Fecha de nacimiento: "<<personaAux.fechaNacimiento.año<<endl;
+    return 0;
+}
